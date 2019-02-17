@@ -1,0 +1,53 @@
+Author: Mario Gallego Becerra
+Title: Comandos de GIT
+Comment: Comandos útiles de git
+
+#información útil de GIt
+###Sacados del curso de git+github
+
+
+##Notas
+
+-Diferencia entre merges
+  -FastForward (--ff-only): son los cambios que se hacen sin que ninguno pise a otro
+  -Con conflictos: Son aquellos realizados sobre una misma parte de un archivo
+-Archivo .gitignore es un archivo que permite introducir las rutas y archivos que queremos que sean ignoradas por git
+-El rebase permite llevar acabo diferentes acciones sobre los commits: pick, reword, edit, squash...
+
+
+##Comandos
+
+|__Comando__|__Descripción__|
+|==|==|
+|__Ayuda__|__Comando de ayuda de git__|
+|git help| muestra un breve listado de comandos útiles|
+|git help -ag| muestra un amplio listado de comandos de git y las guías comunes de git|
+|git x --help| abre en un navegador la guía completa del comando x|
+|__Repositorio local y ramas__|__Comandos para trabajar en el repositorio local y sus ramas__|
+|git init| inicia un repositoiro local|
+|git add x| siendo x un directorio, fichero o conjunto, los añade a un estado de precommit a la rama|
+|git commit -m 'x'| commitea los archivos indicados con "git add" a la rama en la que estemos con el mensaje x|
+|git merge x| mergea la rama x y la actual|
+|git branch -d x| borra la rama x|
+|git reset x| desace cambios de git como un merge, un add, hace una restauración a un coomit concreto...|
+|git checkout x| cambia de posición a x, ya sea x un id de un commit, una rama o una versión anterior de ur archivo|
+|git stash| hace una imagen del estado actual del repositorio para poder recuperarla posteriormente|
+|git rebase x| pone los commits de la rama x en la rama actual y posteriormente añade los de la rama actual|
+|__Repositorios__|__Comandos para trabajar con repositorios remotos__|
+|git pull| baja los cambios del repositorio repoto al local|
+|git fetch| descarga los datos de un repositorio remoto|
+|git push x y| sube los cambios de la rama y al repositorio con nombre x|
+|git clone x| clona el estado de un repositorio remoto a y crea un repositorio local a partir de la url x|
+|git branch -a| lista todas las ramas, inclusive las borradas y las remotas|
+|__Historial__|__Comandos para ver el historial y estado en el que se encuentra un repositorio__|
+|git log --graph --oneline| muestra el historial de forma gráfica y con el conteido resumido|
+|git status| muestra el estado actual de repositorio local|
+|git branch| muestra un listado de las ramas|
+|git show x| muestra información sobre x, ya sea x el id de un commit, una rama...|
+|git diff x y| muestra las diferencias entre x e y, ya sean ramas, commits, merges...|
+|git reflog| muestra la referencia e información sobre cambios hechos|
+|git stash list| muestra un listado de los stash|
+|__Configuración__|__Comandos de configuración de git__|
+|git config --global alias.x 'y'| crea un comando de git con el formato "git x" que efectua lo puesto en y|
+|git config --global user.name 'x'| indica el nombre del usuario que usará git|
+|git config --global user.email 'x'| indica el email del usuario que usará git|
