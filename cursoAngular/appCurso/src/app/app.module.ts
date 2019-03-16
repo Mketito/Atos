@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 
 //iportacion de nuestro componente
 import {FechaactualComponent} from './fechaactual/fechaactual.component';
-import { CopyrightComponent } from './copyright/copyright.component'
+import { CopyrightComponent } from './copyright/copyright.component';
+import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     FechaactualComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    ViewmodeloComponent
   ],
   imports: [
     BrowserModule,
