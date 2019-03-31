@@ -19,7 +19,9 @@ import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangc
 import { EjdirectivangforComponent } from './ejdirectivangfor/ejdirectivangfor.component';
 import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivangswitch.component';
 import { MenuitemDirective } from './menuitem.directive';
-import { EjdirectivaformydirectivaComponent } from './ejdirectivaformydirectiva/ejdirectivaformydirectiva.component'
+import { EjdirectivaformydirectivaComponent } from './ejdirectivaformydirectiva/ejdirectivaformydirectiva.component';
+import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './hijo/hijo.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { EjdirectivaformydirectivaComponent } from './ejdirectivaformydirectiva/
     EjdirectivangforComponent,
     EjdirectivangswitchComponent,
     MenuitemDirective,
-    EjdirectivaformydirectivaComponent
+    EjdirectivaformydirectivaComponent,
+    PadreComponent,
+    HijoComponent
   ],
   imports: [
     BrowserModule,
